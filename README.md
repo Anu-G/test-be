@@ -17,7 +17,3 @@ $ go test -v ./...
 $ go run main.go
 ````
 Input List: 1,2,1,2,2,1
-
-## Note
-This program will show max value from a palindrome order
-- [1,2,3,2,1] -> Max value: 3
