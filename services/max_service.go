@@ -10,7 +10,7 @@ type MaxService struct {
 }
 
 func (M MaxService) FindSorted(num *entities.Array) []int {
-	arr := append(M.Array.List, 0)
+	arr := append(num.List, 0)
 	tempArr2D := [][]int{}
 
 	tempArr := []int{}
@@ -26,7 +26,7 @@ func (M MaxService) FindSorted(num *entities.Array) []int {
 		}
 	}
 
-	list := append([]int{0}, M.Array.List...)
+	list := append([]int{0}, num.List...)
 	tempArr2DRev := [][]int{}
 
 	tempArrRev := []int{}
