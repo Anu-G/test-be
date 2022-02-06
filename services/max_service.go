@@ -23,6 +23,8 @@ func (M MaxService) FindSorted(num *entities.Array) []int {
 			tempArr = append(tempArr, arr[i])
 
 			tempArr2D = append(tempArr2D, tempArr)
+
+			tempArr = nil
 		}
 	}
 
@@ -39,6 +41,8 @@ func (M MaxService) FindSorted(num *entities.Array) []int {
 			tempArrRev = append(tempArrRev, list[i])
 
 			tempArr2DRev = append(tempArr2DRev, tempArrRev)
+
+			tempArrRev = nil
 		}
 	}
 
